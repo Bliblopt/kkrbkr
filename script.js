@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         // Controleer winvoorwaarde
         if (checkCollision(ball, goal)) {
-            alert('Gefeliciteerd! Je hebt gewonnen!');
+            alert('bakker neukt kontjes van kindjes');
         }
     });
 
