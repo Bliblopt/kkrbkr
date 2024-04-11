@@ -1,20 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voetbalpagina</title>
-</head>
-<body>
-    <h1>Welkom op onze voetbalpagina!</h1>
-    
-    <!-- Afbeelding in de body -->
-    <img src="game png/istockphoto-1268304505-612x612.jpg" alt="Voetbalwedstrijd" width="500">
-    
-    <!-- Afbeelding voor "goal" -->
-    <img src="game png/1600943094096.jpeg" alt="Doelpunt" width="200">
-    
-    <!-- Afbeelding voor "ball" -->
-    <img src="game png/book-icon-clipart-transparent-background-free-png.webp" alt="Voetbal" width="100">
-</body>
-</html>
+body, html {
+
+margin: 0;
+
+padding: 0;
+
+height: 100%;
+
+}
+
+#game-container {
+
+position: relative;
+
+width: 500px;
+
+height: 500px;
+
+margin: 50px auto;
+
+border: 2px solid black;
+
+background-image: url('images/istockphoto-866061030-612x612.jpg'); /* Vervang 'achtergrond_afbeelding.jpg' door het pad naar je achtergrondafbeelding */
+
+background-size: cover; /* Zorgt ervoor dat de afbeelding de hele container bedekt */
+
+background-position: center; /* Centreert de afbeelding binnen de container */
+
+}
+
+#ball {
+
+width: 50px;
+
+height: 50px;
+
+background-image: url('images/20240325_101731.jpg'); /* Vervang 'bal_afbeelding.jpg' door het pad naar je balafbeelding */
+
+background-size: cover; /* Zorgt ervoor dat de afbeelding de hele bal bedekt */
+
+border-radius: 50%;
+
+position: absolute;
+
+top: 50%;
+
+left: 50%;
+
+transform: translate(-50%, -50%);
+
+}
+
+#goal {
+
+width: 50px;
+
+height: 50px;
+
+background-image: url('images/apple-iphone-11-mobiele-telefoon-128gb-rood-1.webp'); /* Vervang 'doel_afbeelding.jpg' door het pad naar je doelafbeelding */
+
+background-size: cover; /* Zorgt ervoor dat de afbeelding de hele goal bedekt */
+
+position: absolute;
+
+top: 80%;
+
+left: 80%;
+
+}
