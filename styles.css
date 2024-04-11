@@ -20,7 +20,7 @@ margin: 50px auto;
 
 border: 2px solid black;
 
-background-image: url('images/istockphoto-866061030-612x612.jpg'); /* Vervang 'achtergrond_afbeelding.jpg' door het pad naar je achtergrondafbeelding */
+background-image: url('game png/istockphoto-1268304505-612x612.jpg'); /* Vervang 'achtergrond_afbeelding.jpg' door het pad naar je achtergrondafbeelding */
 
 background-size: cover; /* Zorgt ervoor dat de afbeelding de hele container bedekt */
 
@@ -34,7 +34,7 @@ width: 50px;
 
 height: 50px;
 
-background-image: url('images/20240325_101731.jpg'); /* Vervang 'bal_afbeelding.jpg' door het pad naar je balafbeelding */
+background-image: url('game png/book-icon-clipart-transparent-background-free-png.webp'); /* Vervang 'bal_afbeelding.jpg' door het pad naar je balafbeelding */
 
 background-size: cover; /* Zorgt ervoor dat de afbeelding de hele bal bedekt */
 
@@ -56,7 +56,7 @@ width: 50px;
 
 height: 50px;
 
-background-image: url('images/apple-iphone-11-mobiele-telefoon-128gb-rood-1.webp'); /* Vervang 'doel_afbeelding.jpg' door het pad naar je doelafbeelding */
+background-image: url('game png/1600943094096.jpeg'); /* Vervang 'doel_afbeelding.jpg' door het pad naar je doelafbeelding */
 
 background-size: cover; /* Zorgt ervoor dat de afbeelding de hele goal bedekt */
 
