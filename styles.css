@@ -1,30 +1,20 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-#game-container {
-    position: relative;
-    width: 500px;
-    height: 500px;
-    margin: 50px auto;
-    border: 2px solid black;
-}
-#ball {
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-#goal {
-    width: 50px;
-    height: 50px;
-    background-color: green;
-    position: absolute;
-    top: 80%;
-    left: 80%;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voetbalpagina</title>
+</head>
+<body>
+    <h1>Welkom op onze voetbalpagina!</h1>
+    
+    <!-- Afbeelding in de body -->
+    <img src="link_naar_jouw_afbeelding.jpg" alt="Voetbalwedstrijd" width="500">
+    
+    <!-- Afbeelding voor "goal" -->
+    <img src="link_naar_goal_afbeelding.jpg" alt="Doelpunt" width="200">
+    
+    <!-- Afbeelding voor "ball" -->
+    <img src="link_naar_ball_afbeelding.jpg" alt="Voetbal" width="100">
+</body>
+</html>
