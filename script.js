@@ -2,26 +2,31 @@ document.addEventListener("DOMContentLoaded", function() {
     const ball = document.getElementById('ball');
     const goal = document.getElementById('goal');
     const gameContainer = document.getElementById('game-container');
+    const containerRect = gameContainer.getBoundingClientRect(); // Get the boundaries of the game container
 
     // Beweging van de bal
     document.addEventListener('keydown', function(event) {
         const key = event.key;
         const ballStyle = getComputedStyle(ball);
-        const ballLeft = parseInt(ballStyle.left);
-        const ballTop = parseInt(ballStyle.top);
+        let ballLeft = parseInt(ballStyle.left);
+        let ballTop = parseInt(ballStyle.top);
 
         switch (key) {
             case 'ArrowUp':
-                ball.style.top = (ballTop - 10) + 'px';
+                ballTop = Math.max(ballTop - 10, containerRect.top); // Ensure the ball stays within the top boundary
+                ball.style.top = ballTop + 'px';
                 break;
             case 'ArrowDown':
-                ball.style.top = (ballTop + 10) + 'px';
+                ballTop = Math.min(ballTop + 10, containerRect.bottom - ball.offsetHeight); // Ensure the ball stays within the bottom boundary
+                ball.style.top = ballTop + 'px';
                 break;
             case 'ArrowLeft':
-                ball.style.left = (ballLeft - 10) + 'px';
+                ballLeft = Math.max(ballLeft - 10, containerRect.left); // Ensure the ball stays within the left boundary
+                ball.style.left = ballLeft + 'px';
                 break;
             case 'ArrowRight':
-                ball.style.left = (ballLeft + 10) + 'px';
+                ballLeft = Math.min(ballLeft + 10, containerRect.right - ball.offsetWidth); // Ensure the ball stays within the right boundary
+                ball.style.left = ballLeft + 'px';
                 break;
         }
         // Controleer winvoorwaarde
@@ -40,4 +45,3 @@ document.addEventListener("DOMContentLoaded", function() {
                  ballRect.top > goalRect.bottom);
     }
 });
-
