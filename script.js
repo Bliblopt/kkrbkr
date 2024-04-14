@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
     goal.style.left = goalLeft + 'px';
     goal.style.top = goalTop + 'px';
 
-    // Interval om het doel langzaam te laten bewegen
-    const goalSpeed = 1; // Verander deze waarde om de snelheid aan te passen
+    // Interval om het doel sneller te laten bewegen
+    const goalSpeed = 3; // Verander deze waarde om de snelheid aan te passen
     setInterval(function() {
         // Controleer of het doel de boven- of onderkant van het game-container bereikt
         if (goalTop <= 0 || goalTop + goal.offsetHeight >= gameContainerRect.height) {
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Pas de positie van het doel aan
         goalTop += goalSpeed;
         goal.style.top = goalTop + 'px';
-    }, 50); // Interval van 50 milliseconden voor vloeiende beweging
+    }, 30); // Interval van 30 milliseconden voor snellere beweging
 
     // Beweging van de bal
     document.addEventListener('keydown', function(event) {
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
         ball.style.top = ballTop + 'px';
         // Controleer winvoorwaarde
         if (checkCollision(ball, goal)) {
-            alert('Oh nee bakker heeft jou gensapt met jou telefoon, ga je maar melden');
+            alert('Je hebt flankie bakkie geraakt met het boenk');
         }
     });
 
