@@ -184,11 +184,6 @@ ballRect.bottom < goalRect.top ||
 
 ballRect.top > goalRect.bottom);
 
-}
-
-});
-
-// Add the new goal
 
 const newGoal = document.createElement('img');
 newGoal.src = "gaym pics (3)/dikt.jpg";
@@ -196,3 +191,11 @@ newGoal.style.position = 'absolute';
 newGoal.style.top = '400px';
 newGoal.style.left = '400px';
 gameContainer.appendChild(newGoal);
+
+  
+if (checkCollision(ball, newGoal)) {
+    alert('Congratulations! You reached the new goal!');
+  
+}
+
+});
