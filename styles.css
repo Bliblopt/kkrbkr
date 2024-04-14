@@ -20,7 +20,7 @@ margin: 50px auto;
 
 border: 2px solid black;
 
-background-image: url('game png/istockphoto-1268304505-612x612.jpg'); /* Vervang 'achtergrond_afbeelding.jpg' door het pad naar je achtergrondafbeelding */
+background-image: url('gaym pics (3)/klas met mens.png'); /* Vervang 'achtergrond_afbeelding.jpg' door het pad naar je achtergrondafbeelding */
 
 background-size: cover; /* Zorgt ervoor dat de afbeelding de hele container bedekt */
 
@@ -56,7 +56,7 @@ width: 50px;
 
 height: 50px;
 
-background-image: url('game png/1600943094096.jpeg'); /* Vervang 'doel_afbeelding.jpg' door het pad naar je doelafbeelding */
+background-image: url('gaym pics (3)/bakky.jpg'); /* Vervang 'doel_afbeelding.jpg' door het pad naar je doelafbeelding */
 
 background-size: cover; /* Zorgt ervoor dat de afbeelding de hele goal bedekt */
 
