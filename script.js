@@ -8,9 +8,9 @@ const gameContainer = document.getElementById('game-container');
 
 const gameContainerRect = gameContainer.getBoundingClientRect();
 
-let ballLeft = 25;
+let ballLeft = 50;
 
-let ballTop = 25;
+let ballTop = 60;
 
 let goalLeft = Math.random() * (gameContainerRect.width - goal.offsetWidth);
 
