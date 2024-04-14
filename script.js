@@ -1,8 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     const ball = document.getElementById('ball');
-    const goal1 = document.getElementById('goal1');
-    const goal2 = document.getElementById('goal2');
+    const goal1 = document.getElementById('goal');
+    const goal2 = document.createElement('goal');
+    goal2.src = 'gaym pics (3)/dikt.jpg';
+    goal2.style.position = 'absolute';
+    goal2.style.width = '50px'; 
+    goal2.style.height = '50px'; 
+    goal2.style.left = '100px'; 
+    goal2.style.top = '100px'; 
+    gameContainer.appendChild(goal2); 
+
     const gameContainer = document.getElementById('game-container');
     const gameContainerRect = gameContainer.getBoundingClientRect();
 
@@ -10,17 +18,12 @@ document.addEventListener("DOMContentLoaded", function() {
     let ballTop = 0;
     let goal1Left = Math.random() * (gameContainerRect.width - goal1.offsetWidth);
     let goal1Top = Math.random() * (gameContainerRect.height - goal1.offsetHeight);
-    let goal2Left = Math.random() * (gameContainerRect.width - goal2.offsetWidth);
-    let goal2Top = Math.random() * (gameContainerRect.height - goal2.offsetHeight);
 
     ball.style.left = ballLeft + 'px';
     ball.style.top = ballTop + 'px';
 
     goal1.style.left = goal1Left + 'px';
     goal1.style.top = goal1Top + 'px';
-
-    goal2.style.left = goal2Left + 'px';
-    goal2.style.top = goal2Top + 'px';
 
     document.addEventListener('keydown', function(event) {
         const key = event.key;
