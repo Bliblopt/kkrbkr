@@ -8,7 +8,7 @@ const gameContainer = document.getElementById('game-container');
 
 const gameContainerRect = gameContainer.getBoundingClientRect();
 
-let ballLeft = 50;
+let ballLeft = 45;
 
 let ballTop = 60;
 
